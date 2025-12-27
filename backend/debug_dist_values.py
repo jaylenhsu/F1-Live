@@ -2,7 +2,7 @@
 import pickle
 import sys
 
-# Load the cached data from the working original
+# Load the cached data from reference data
 try:
     with open("/Users/jaylenhsu/Desktop/Internships/Projects/f1-race-replay/computed_data/2025_Season_Round_24:_Abu_Dhabi_Grand_Prix_-_Race_race_telemetry.pkl", "rb") as f:
         data = pickle.load(f)

@@ -1,7 +1,6 @@
-"""Compare position calculations between original and our version."""
 import pickle
 
-# Load original working data
+# Load reference data
 with open("/Users/jaylenhsu/Desktop/Internships/Projects/f1-race-replay/computed_data/2025_Season_Round_24:_Abu_Dhabi_Grand_Prix_-_Race_race_telemetry.pkl", "rb") as f:
     original_data = pickle.load(f)
     original_frames = original_data['frames']
@@ -24,7 +23,7 @@ for i in range(2500, 2600):
                 print(f"  P{data['position']}: {code:3s} - dist={data['dist']:8.1f}m, lap={data['lap']}")
         break
 
-# Now check if our version has computed data
+# Check if our version has computed data
 try:
     with open("/Users/jaylenhsu/Desktop/Internships/Projects/f1-race-replay copy/backend/computed_data/2025_Season_Round_24:_Abu_Dhabi_Grand_Prix_-_Race_race_telemetry.pkl", "rb") as f:
         our_data = pickle.load(f)

@@ -10,7 +10,7 @@ try:
 
         print(f"Total frames in our data: {len(our_frames)}")
 
-        # Find lap transition (around t=102s based on original)
+        # Find lap transition
         for i, frame in enumerate(our_frames):
             if 101.5 < frame['t'] < 102.5:
                 print(f"\n=== Frame {i}, t={frame['t']:.1f}s, leader_lap={frame['lap']} ===")
