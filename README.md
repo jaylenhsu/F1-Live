@@ -1,5 +1,7 @@
 # F1 Live - Web Application
 
+![F1 Live](images/F1-live.png)
+
 ## Architecture
 
 - **Backend**: FastAPI (Python) - Wraps FastF1 data pipeline and processing
