@@ -1,4 +1,4 @@
-# F1 Live - Web Application
+# F1 Live - Web App
 
 ![F1 Live](images/F1-live.png)
 
